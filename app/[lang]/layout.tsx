@@ -20,11 +20,11 @@ export async function generateMetadata(
   const lang = params.lang as "en" | "id";
 
   const title = lang === "id"
-    ? "KKN Pangkalan 2026 — Dokumentasi Kegiatan KKN Tematik"
-    : "KKN Pangkalan 2026 — Thematic Community Service Documentation";
+    ? "KKN Pangkalan 2026 — Dokumentasi Kegiatan KKN Nasional Terpadu"
+    : "KKN Pangkalan 2026 — Integrated National Community Service Documentation";
   const description = lang === "id"
-    ? "Dokumentasi Kegiatan KKN Tematik Desa Pangkalan, Kecamatan Cikidang, Universitas Nusa Putra 2026"
-    : "Documentation of Thematic Community Service in Pangkalan Village, Cikidang District, Nusa Putra University 2026";
+    ? "Dokumentasi Kegiatan KKN Nasional Terpadu Desa Pangkalan, Kecamatan Cikidang, Universitas Nusa Putra 2026"
+    : "Documentation of Integrated National Community Service in Pangkalan Village, Cikidang District, Nusa Putra University 2026";
 
   return {
     title: {

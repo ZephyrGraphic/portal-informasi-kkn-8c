@@ -1,0 +1,75 @@
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container": "#f0e8eb",
+        "surface": "#fdf7f8",
+        "primary": "#7e0048",
+        "on-primary-fixed": "#330019",
+        "surface-variant": "#f0e0e7",
+        "on-secondary-fixed": "#330019",
+        "on-primary": "#ffffff",
+        "surface-bright": "#fff8f9",
+        "surface-dim": "#e4d9dc",
+        "secondary-fixed-dim": "#ffb0ca",
+        "outline": "#827378",
+        "on-surface-variant": "#4f4448",
+        "tertiary-fixed": "#ffd9e2",
+        "secondary-container": "#9d205b",
+        "on-tertiary": "#ffffff",
+        "secondary-fixed": "#ffd9e2",
+        "on-tertiary-fixed-variant": "#5a3a41",
+        "primary-fixed-dim": "#ffb0ca",
+        "on-error": "#ffffff",
+        "on-error-container": "#410002",
+        "inverse-surface": "#352f31",
+        "surface-container-high": "#efe4e7",
+        "secondary": "#a1005a",
+        "outline-variant": "#d4c2c7",
+        "inverse-primary": "#ffb0ca",
+        "surface-container-low": "#f8eff2",
+        "on-secondary": "#ffffff",
+        "on-primary-container": "#330019",
+        "inverse-on-surface": "#f9eced",
+        "on-surface": "#201a1c",
+        "error": "#ba1a1a",
+        "background": "#fff8f9",
+        "on-tertiary-container": "#3e0019",
+        "on-secondary-fixed-variant": "#7b0043",
+        "surface-tint": "#a1005a",
+        "primary-fixed": "#ffd9e2",
+        "primary-container": "#330019",
+        "on-background": "#201a1c",
+        "on-secondary-container": "#ffd9e2",
+        "error-container": "#ffdad6",
+        "tertiary-container": "#ffd9e2",
+        "surface-container-highest": "#e8dade",
+        "on-tertiary-fixed": "#25151b",
+        "tertiary-fixed-dim": "#fcb1c4",
+        "surface-container-lowest": "#ffffff",
+        "tertiary": "#7b4e57",
+        "on-primary-fixed-variant": "#7e0048"
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+      },
+      fontFamily: {
+        headline: ["var(--font-manrope)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        label: ["var(--font-inter)", "sans-serif"]
+      }
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+} satisfies Config;

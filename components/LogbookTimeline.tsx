@@ -161,7 +161,7 @@ export default function LogbookTimeline({ entries, dict }: LogbookTimelineProps)
         {hasMore ? (
           <button
             onClick={loadMore}
-            className="bg-secondary hover:bg-[#5c0035] text-white px-10 py-4 rounded-full font-bold text-sm tracking-tight flex items-center gap-3 transition-all active:scale-95 shadow-lg shadow-secondary/20"
+            className="bg-secondary hover:bg-[#374825] text-white px-10 py-4 rounded-full font-bold text-sm tracking-tight flex items-center gap-3 transition-all active:scale-95 shadow-lg shadow-secondary/20"
           >
             {dict.loadMore}
             <span className="material-symbols-outlined">expand_more</span>

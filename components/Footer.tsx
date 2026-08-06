@@ -27,16 +27,27 @@ export default function Footer({
   lang: string;
 }) {
   return (
-    <footer className="bg-[#201a1c] w-full py-16 px-8 border-t border-primary/10">
+    <footer className="bg-[#1F2916] w-full py-16 px-8 border-t border-primary/20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
         <div className="space-y-8">
-          <div className="space-y-2">
-            <div className="text-xl font-black text-white uppercase tracking-tighter font-headline">
-              {common.programName}
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <Image 
+                src="/logo-kkn-pangkalan-v2.png" 
+                alt="KKN Desa Pangkalan Logo" 
+                width={56} 
+                height={56}
+                className="w-12 h-12 object-contain drop-shadow-md"
+              />
+              <div className="space-y-1">
+                <div className="text-xl font-black text-white uppercase tracking-tighter font-headline">
+                  {common.programName}
+                </div>
+                <p className="font-body text-xs font-bold text-secondary uppercase tracking-[0.2em]">
+                  {common.groupVillageLabel}
+                </p>
+              </div>
             </div>
-            <p className="font-body text-xs font-bold text-primary uppercase tracking-[0.2em]">
-              {common.groupVillageLabel}
-            </p>
           </div>
 
           <div className="pt-4 border-t border-white/5">

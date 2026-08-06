@@ -49,7 +49,7 @@ export default function TeamGrid({ members, closeLabel }: TeamGridProps) {
             onClick={() => setSelectedMember(member)}
             className="group relative bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 text-left cursor-pointer"
           >
-            <div className="relative h-80 w-full overflow-hidden">
+            <div className="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all z-10 mix-blend-multiply"></div>
               <Image
                 alt={`Portrait of ${member.name}`}

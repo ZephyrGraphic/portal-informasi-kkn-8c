@@ -62,11 +62,11 @@ export default function Navbar({ lang, dict, common }: { lang: "en" | "id"; dict
           {/* Logo Area */}
           <Link href={`/${lang}`} className="flex items-center gap-3 group">
             <Image 
-              src="/LOGO-UNIVERSITAS-NUSA-PUTRA.png" 
-              alt="Nusa Putra University Logo" 
-              width={44} 
-              height={44}
-              className="w-9 h-9 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform drop-shadow-md"
+              src="/logo-kkn-pangkalan-v2.png" 
+              alt="KKN Desa Pangkalan Logo" 
+              width={48} 
+              height={48}
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform drop-shadow-md"
             />
             <div className="flex flex-col">
               <span className="text-sm sm:text-base font-black tracking-tighter text-white font-headline leading-tight">
@@ -137,7 +137,7 @@ export default function Navbar({ lang, dict, common }: { lang: "en" | "id"; dict
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-[#201a1c] shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-[#1F2916] shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -146,11 +146,11 @@ export default function Navbar({ lang, dict, common }: { lang: "en" | "id"; dict
           <div className="flex items-center justify-between p-6 border-b border-white/5">
             <div className="flex items-center gap-3">
               <Image 
-                src="/LOGO-UNIVERSITAS-NUSA-PUTRA.png" 
-                alt="Nusa Putra University Logo" 
-                width={32} 
-                height={32}
-                className="w-7 h-7 object-contain drop-shadow-md"
+                src="/logo-kkn-pangkalan-v2.png" 
+                alt="KKN Desa Pangkalan Logo" 
+                width={36} 
+                height={36}
+                className="w-8 h-8 object-contain drop-shadow-md"
               />
               <span className="font-headline font-black text-white text-[10px] uppercase tracking-widest leading-tight">
                 {common.programName}
